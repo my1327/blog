@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>个人主页</title>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/changeCss.css" />
+		<script src="js/jquery.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container-fluid"> 
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse"
+				data-target="#topbar-navbar-collapse">
+							<span class="sr-only">切换导航</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					    <a class="navbar-brand" href="#"><img src="img/lovepanda.png" alt="logo" /></a>
+					</div>
+					<div class="collapse navbar-collapse" id="topbar-navbar-collapse">
+						<ul class="nav navbar-nav">
+				            <li><a href="#">首页</a></li>
+				            <li class="dropdown">
+				            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">博客<b class="caret"></b></a>
+				            	<ul class="dropdown-menu">
+				                    <li><a href="#">博客列表</a></li>
+				                    <li><a href="#">最新博客</a></li>
+				                    <li><a href="#">最热博客</a></li>
+				                </ul>
+				            </li>
+				            <li><a href="#">美图</a></li>
+				            <li><a href="#">视频</a></li>
+				            <li><a href="#">CMS</a></li>
+				            <li><a href="#">留言板</a></li>
+				            <li class="dropdown">
+				            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">系统<b class="caret"></b></a>
+				            	<ul class="dropdown-menu">
+				                    <li><a href="#">注销</a></li>
+				                    <li><a href="#">后台</a></li>
+				                </ul>
+				            </li>
+				        </ul>
+				        <ul class="nav navbar-nav navbar-right"> 
+				            <li><a href="#"><span class="glyphicon glyphicon-user"></span> 个人主页</a></li> 
+				        </ul> 
+					</div>					
+				</div>
+			</nav>
+		</header>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li class="glyphicon glyphicon-home" ><a href="#">主页</a></li>
+			    <li><a href="#">个人中心</a></li>
+			    <li class="active">详情</li>
+			</ol>
+			<div class="row">
+				<div class="col-md-4 paddingCss borderRight">
+					<div class="container-fluid list-group removePadding">
+						<div class="col-sm-4  col-xs-4 selfImg">
+							<img src="img/100.jpg" alt="头像" />
+						</div>
+						<div class="col-sm-8  col-xs-8 removePadding">
+							<div class="getMargin">
+								<p>
+									<span data-container="body" data-toggle="popover" data-placement="top" data-content="用户名" data-trigger="hover focus">
+										qq_1337
+									</span>
+								</p>
+							</div>
+							<div class="getMargin">
+								<p>
+									<span data-container="body" data-toggle="popover" data-placement="top" data-content="昵称" data-trigger="hover focus">
+										忘忧、
+									</span>	
+								</p>
+							</div>
+						</div>
+					</div>
+					<ul class="list-group">
+					    <li class="list-group-item clear">
+					    	<i class="glyphicon glyphicon-pencil"></i>您的博客
+					    	<button type="button" class="btn btn-default btn-xs pull-right" data-container="body" data-toggle="popover" data-placement="top" data-content="点我管理您的博客" data-trigger="hover focus">0</button>
+					    </li>
+					    <li class="list-group-item clear">
+					    	<i class="glyphicon glyphicon-picture"></i>您的美图
+					    	<button type="button" class="btn btn-default btn-xs pull-right" data-container="body" data-toggle="popover" data-placement="top" data-content="点我管理您的美图" data-trigger="hover focus">0</button>
+					    </li>
+					    <li class="list-group-item clear">
+					    	<i class="glyphicon glyphicon-film"></i>您的视频
+					    	<button type="button" class="btn btn-default btn-xs pull-right" data-container="body" data-toggle="popover" data-placement="top" data-content="点我管理您的视频" data-trigger="hover focus">0</button>
+					    </li>
+					    <li class="list-group-item clear">
+					        <i class="glyphicon glyphicon-hand-right"></i>快捷入口
+					    	<button type="button" class="btn btn-primary btn-sm pull-right">写博客</button>
+					    	<button type="button" class="btn btn-primary btn-sm pull-right">传美图</button>
+					    	<button type="button" class="btn btn-primary btn-sm pull-right">发视频</button>
+					    </li>
+					</ul>
+					<div class="container-fluid removePadding selfText">
+						<div class="page-header">
+						    <h3>尊敬的用户您好！</h3>
+						</div>
+						<p>注意用户名是您登陆系统的重要信息，昵称提供相关模块展示的作用。用户名不能与系统中的其他用户相同且不能用系统保留字段。</p>
+					</div>
+				</div>				
+				<div class="col-md-8 paddingCss">
+					<ul id="myTab" class="nav nav-tabs widthPercent removerBorder bgColor">
+						<li class="active"><a href="#myStuff" data-toggle="tab">我的资料</a></li>
+						<li><a href="#stuChange" data-toggle="tab">资料修改</a></li>
+						<li><a href="#hdproChange" data-toggle="tab">头像修改</a></li>
+						<li><a href="#pswChange" data-toggle="tab">密码修改</a></li>
+					</ul>
+					<div  id="myTabContent" class="tab-content">
+						<div class="tab-pane table-responsive fade in active"  id="myStuff">
+							<table class="table table-striped table-bordered table-hover">
+							  <thead>
+							    <tr>
+							      <th width="20%">类别</th>
+							      <th width="80%">内容</th>
+							    </tr>
+							  </thead>
+							  <tbody>
+							    <tr>
+							      <td>用户名</td>
+							      <td>qq_1335</td>
+							    </tr>
+							    <tr>
+							      <td>昵称</td>
+							      <td>Mumbai</td>
+							    </tr>
+							    <tr>
+							      <td>性别</td>
+							      <td>Pune</td>
+							    </tr>
+							    <tr>
+							      <td>年龄</td>
+							      <td>Pune</td>
+							    </tr>
+							    <tr>
+							      <td>民族</td>
+							      <td>Pune</td>
+							    </tr>
+							    <tr>
+							      <td>邮箱</td>
+							      <td>Pune</td>
+							    </tr>
+							    <tr>
+							      <td>手机</td>
+							      <td>Pune</td>
+							    </tr>
+							    <tr>
+							      <td>QQ</td>
+							      <td>Pune</td>
+							    </tr>
+							    <tr>
+							      <td>地址</td>
+							      <td>Pune</td>
+							    </tr>
+							    <tr>
+							      <td>职业和工作</td>
+							      <td>Pune</td>
+							    </tr>
+							    <tr>
+							      <td>创建时间</td>
+							      <td>Pune</td>
+							    </tr>
+							    <tr>
+							      <td>最后登录时间</td>
+							      <td>Pune</td>
+							    </tr>
+							    <tr>
+							      <td>类型</td>
+							      <td>Pune</td>
+							    </tr>
+							  </tbody>
+							</table>
+						</div>						
+						<div class="tab-pane fade" id="stuChange">
+							<form  role="form" action="" menthod="post">
+								<div class="form-group">
+									<label for="name">用户名<span style="color:red">*</span></label>
+									<input type="text" class="form-control" id="name" placeholder="请输入名称">
+								</div>
+								<div class="form-group">
+									<label for="name">昵称</label>
+									<input type="text" class="form-control" max="100" placeholder="请输入昵称">
+								</div>
+								<div class="form-group">
+									<label for="name">性别</label>
+									<select class="form-control">
+										<option>男</option>
+										<option>女</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label for="name">年龄</label>
+									<input type="number" class="form-control" id="name" placeholder="请输入年龄">
+								</div>
+								<div class="form-group">
+									<label for="name">民族</label>
+									<input type="text" class="form-control" id="name" placeholder="请输入民族全称">
+								</div>
+								<div class="form-group">
+									<label for="name">邮件</label>
+									<input type="text" class="form-control" id="name" placeholder="请输入电子邮件">
+								</div>
+								<div class="form-group">
+									<label for="name">手机</label>
+									<input type="text" class="form-control" id="name" placeholder="请输入手机号">
+								</div>
+								<div class="form-group">
+									<label for="name">QQ</label>
+									<input type="text" class="form-control" id="name" placeholder="请输入QQ">
+								</div>
+								<div class="form-group">
+									<label for="name">地址</label>
+									<input type="text" class="form-control" id="name" placeholder="请输入地址">
+								</div>
+								<div class="form-group">
+									<label for="name">职业和工作</label>
+									<input type="text" class="form-control" id="name" placeholder="请输入您的职业和工作">
+								</div>
+								<div class="form-group">
+									<button type="submit" class="btn btn-default">提交</button>
+								</div>
+							</form>
+						</div>
+						<div class="tab-pane fade" id="hdproChange">
+							QAQ
+						</div>
+						<div class="tab-pane fade col-md-8 col-md-offset-2" id="pswChange">
+							<form role="form" action="">
+								<div class="form-group" id="">
+									<input type="password" class="form-control" placeholder="请输入新密码"/>
+									<input type="password" class="form-control" placeholder="请再次输入密码"/>
+									<button class="btn btn-group-lg bgBtn">提交</button>
+								</div>								
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+<script>
+	$(function() {
+		$("[data-toggle='popover']").hover().popover();
+	});
+	$('#myTab a').click(function (e) {
+	  e.preventDefault()
+	  $(this).tab('show')
+	})
+</script>
+</html>
