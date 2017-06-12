@@ -5,6 +5,10 @@ body{
     background-color:#eaeaea;
     height:100%;
 }
+h1,h2,h3,h4,h5,p{
+    margin-top:0;
+    margin-bottom:0;
+}
 p,h3,h5,a{
     text-align: center;
     text-decoration: none;
@@ -15,6 +19,9 @@ a:hover,a:visited,a:link{
 }
 .navbar-toggle .icon-bar {
     background-color: #888;
+}
+.navbar-toggle {
+    border: 1px solid rgba(0, 0, 0, 0.45);
 }
 .container{
     width:100%;
@@ -48,6 +55,21 @@ a:hover,a:visited,a:link{
     }
     .top50{
         top:50%;
+    }
+    .rightBox{
+        height:100%;
+        position:fixed;
+        right:0;
+        top:0;
+        .listBox{
+            overflow-y: auto;
+            height: 100%;
+            .listDiv{
+                background-color:white;
+                height:30%;
+                margin-top:5%;
+            }
+        }
     }
 }
 [class^="col-lg"],[class^="col-md"],[class^="col-sm"],[class^="col-xs"]{
@@ -92,4 +114,25 @@ a:hover,a:visited,a:link{
 .headText h3,.headText h5{
     width:100%;
     text-align: center;
+}
+.jsColor{
+    color:#ba8f6c;
+}
+.csColor{
+    color:#ecba43;
+}
+.htmlColor{
+    color:#ff945c;
+}
+.vueColor{
+    color:#fb645c;
+}
+.nodeColor{
+    color:#fe64fc;
+}
+.red{
+    color:red;
+}
+.codeDiv{
+    border-left:5px solid #657b83;
 }

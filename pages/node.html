@@ -4,9 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <title>忘忧のblog</title>
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="css/basic.css">
-        <link rel="stylesheet" href="css/rightBox.css">
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/basic.css">
+        <link rel="stylesheet" href="../css/rightBox.css">
     </head>
     <body>
         <div class="container">
@@ -25,7 +25,7 @@
                 <div  id="header" class="col-md-8 col-xs-8 col-md-offset-2 col-xs-offset-2 top14">
                     <div class="col-lg-12 col-xs-12 top14 headImgBox">
                         <div class="headImg">
-                            <img src="img/100.jpg" alt="头像">
+                            <img src="../img/100.jpg" alt="头像">
                         </div>
                     </div>
                     <div class="col-lg-12 col-xs-12 headText top60">
@@ -53,9 +53,9 @@
                     <div class="col-md-10 col-md-offset-1 listDiv">
                         <div class="col-md-12 listHead">
                             <div class="col-md-10 col-md-offset-1 headBox">
-                                <h2 class="headTitle">
+                                <h1 class="headTitle">
                                     <a href="#">关于nodejs的一二事</a>
-                                </h2>
+                                </h1>
                                 <h4>
                                     <time datetime="2017-6-2"><i class="glyphicon glyphicon-calendar"></i>2017-6-2</time>
                                 </h4>
@@ -72,35 +72,38 @@
                             <div class="myTags">
                                 <span class="nodeColor"><i class="glyphicon glyphicon-tag"></i>nodejs</span>
                             </div>
-                            <a class="btn btn-default" href="pages/node.html">展开全文 >></a>
                         </div>
                     </div>
-                    <div class="col-md-10 col-md-offset-1 listDiv">
-
-                    </div>
-                    <div class="col-md-10 col-md-offset-1 listDiv">
-
-                    </div>
-                    <div class="col-md-10 col-md-offset-1 listDiv">
-
-                    </div>
-                    <div class="col-md-10 col-md-offset-1 listDiv">
-
+                    <div class="col-md-10 col-md-offset-1 listDiv2">
+                        <div class="col-md-10 col-md-offset-1">
+                            <h3>1.nodejs的安装</h3>
+                            <p>
+                                在<a href="http://nodejs.cn/">http://nodejs.cn/</a>网站下载个人电脑适应的nodejs版本后，双击进行安装，
+                                安装过程中可自行选择安装路径和安装模式。
+                            </p>
+                            <p class="red">
+                                ❀ 在win8.1操作系统中，.msi版本安装可能会出现2503或者2503之类的错误，此时只需将安装文件放在你所知的目录下，
+                                利用管理员权限打开命令提示符界面，msiexec /i 文件目录:\文件名.msi，例如：msiexec /i c:\1.msi
+                            </p>
+                            <p>
+                                安装完成后，在命令提示符界面输入node -v查询node版本，输入npm -v查询npm版本。
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         
     </body>
-    <script src="js/jquery.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
     <script>
         //http://blog.battcn.com/
         window.onload = function(){
             reload = document.getElementById('reload');
             article = document.getElementById('article');
             reload.onclick = function(){
-                location.href = 'index.html';
+                location.href = '../index.html';
             }
             artice.onclck = function(){
                 location.href = "../index.html";

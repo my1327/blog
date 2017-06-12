@@ -1,0 +1,103 @@
+.rightBox {
+  height: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+.rightBox .listBox {
+  overflow-y: auto;
+  height: 100%;
+}
+.rightBox .listBox .listDiv {
+  background-color: white;
+  height: 30%;
+  margin-top: 5%;
+}
+@media (min-width: 992px) {
+  .rightBox {
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+  .rightBox .listBox {
+    overflow-y: auto;
+    height: 100%;
+  }
+  .rightBox .listBox .listDiv {
+    background-color: white;
+    height: 50%;
+    margin-top: 5%;
+  }
+  .rightBox .listBox .listDiv2 {
+    background-color: white;
+    height: auto;
+    min-height: 40%;
+  }
+  .rightBox .listBox .listDiv2 h3,
+  .rightBox .listBox .listDiv2 h4,
+  .rightBox .listBox .listDiv2 h5,
+  .rightBox .listBox .listDiv2 p {
+    text-align: left;
+  }
+  .rightBox .listBox .listDiv2 p {
+    text-indent: 2em;
+    line-height: 20px;
+    margin-top: 6px;
+  }
+}
+.listHead {
+  border-left: 5px solid #4d4d4d;
+  height: 25%;
+}
+.listHead .headBox {
+  display: inline-flex;
+  height: 100%;
+  justify-content: space-between;
+}
+.listHead .headBox .headTitle {
+  display: inline-flex;
+  height: 100%;
+  width: 60%;
+  align-items: center;
+  justify-content: flex-start;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+}
+.listHead .headBox h4 {
+  display: inline-flex;
+  height: 100%;
+  width: 25%;
+  color: #999;
+  align-items: center;
+  justify-content: center;
+}
+.listBody {
+  height: 50%;
+  background-color: #f6f6f6;
+  border-left: 5px solid #657b83;
+  font-size: 16px;
+  overflow: hidden;
+}
+.listBody p {
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 5%;
+  text-align: left;
+}
+.listBottom {
+  display: inline-flex;
+  border-top: 1px solid #ccc;
+  height: 20%;
+  top: 5%;
+  justify-content: space-between;
+  align-items: center;
+}
+.listBottom a {
+  display: inline-flex;
+  height: 70%;
+  background-color: #4d4d4d;
+  color: white;
+  align-items: center;
+}
