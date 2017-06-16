@@ -36,15 +36,25 @@
   }
   .rightBox .listBox .listDiv2 h3,
   .rightBox .listBox .listDiv2 h4,
-  .rightBox .listBox .listDiv2 h5,
-  .rightBox .listBox .listDiv2 p {
+  .rightBox .listBox .listDiv2 h5 {
     text-align: left;
+    margin-top: 20px;
   }
   .rightBox .listBox .listDiv2 p {
     text-indent: 2em;
+    text-align: left;
     line-height: 20px;
     margin-top: 6px;
     margin-bottom: 10px;
+  }
+  .rightBox .listBox .listDiv2 p:last-child {
+    margin-bottom: 10%;
+  }
+  .rightBox .listBox .footer {
+    display: inline-flex;
+    height: 10%;
+    font-size: 12px;
+    align-items: center;
   }
 }
 .listHead {
@@ -75,7 +85,8 @@
   justify-content: center;
 }
 .listBody {
-  height: 50%;
+  height: auto;
+  max-height: 50%;
   background-color: #f6f6f6;
   border-left: 5px solid #657b83;
   font-size: 16px;
@@ -85,6 +96,21 @@
   padding-left: 3%;
   padding-right: 3%;
   padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: left;
+}
+.listBody2 {
+  height: 50%;
+  background-color: #f6f6f6;
+  border-left: 5px solid #657b83;
+  font-size: 16px;
+  overflow: hidden;
+}
+.listBody2 p {
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   text-align: left;
 }
 .listBottom {

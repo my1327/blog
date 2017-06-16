@@ -123,11 +123,15 @@ a:link {
 .headText {
   position: absolute;
 }
-.headText h3,
-.headText h5 {
+.headText h3 {
   width: 100%;
   text-align: center;
   margin-top: 10px;
+}
+.headText h5 {
+  width: 100%;
+  text-align: center;
+  margin-top: 20%;
 }
 .jsColor {
   color: #ba8f6c;
