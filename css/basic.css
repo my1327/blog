@@ -127,6 +127,7 @@ a:link {
 .headText h5 {
   width: 100%;
   text-align: center;
+  margin-top: 10px;
 }
 .jsColor {
   color: #ba8f6c;
